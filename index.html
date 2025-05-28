@@ -4,53 +4,102 @@
   <meta charset="UTF-8">
   <title>AI Science Classroom</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #004080; color: #fff; padding: 1rem; text-align: center; }
-    nav a { margin: 0 1rem; color: #fff; text-decoration: none; }
-    .container { max-width: 800px; margin: 2rem auto; padding: 0 1rem; }
-    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .card { border: 1px solid #ccc; border-radius: 4px; padding: 1rem; text-align: center; }
-    .card a { text-decoration: none; color: #004080; font-weight: bold; }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      /* full-screen fixed background */
+      background: url('https://joshuatc1701.github.io/ChatGPT%20Image%20May%2027%2C%202025%2C%2005_41_35%20PM.png')
+                  no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    /* dark overlay to improve text contrast */
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      min-height: 100%;
+      padding: 0;
+    }
+    header {
+      background: rgba(0, 64, 128, 0.8);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #004080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 3px;
+    }
   </style>
 </head>
 <body>
+  <div class="overlay">
+    <header>
+      <h1>AI Science Classroom</h1>
+      <nav>
+        <a href="lesson-plans.html">Lesson Plans</a>
+        <a href="videos.html">Video Resources</a>
+        <a href="quizzes.html">Quizzes &amp; Games</a>
+        <a href="tools.html">Simulators &amp; Calculators</a>
+      </nav>
+    </header>
 
-  <header>
-    <h1>AI Science Classroom</h1>
-    <nav>
-      <a href="lesson-plans.html">Lesson Plans</a>
-      <a href="videos.html">Video Resources</a>
-      <a href="quizzes.html">Quizzes &amp; Games</a>
-      <a href="tools.html">Simulators &amp; Calculators</a>
-    </nav>
-  </header>
-
-  <main class="container">
-    <p>Welcome! Explore our AI-powered science teaching materials below.</p>
-    <div class="grid">
-      <div class="card">
-        <h2>Lesson Plans</h2>
-        <p>Ready-to-use classroom guides.</p>
-        <a href="lesson-plans.html">Go</a>
+    <main class="container">
+      <p>Welcome! Explore our AI-powered science teaching materials below.</p>
+      <div class="grid">
+        <div class="card">
+          <h2>Lesson Plans</h2>
+          <p>Ready-to-use classroom guides.</p>
+          <a href="lesson-plans.html">Go</a>
+        </div>
+        <div class="card">
+          <h2>Video Resources</h2>
+          <p>Episodes from “AI Science Sings” &amp; more.</p>
+          <a href="videos.html">Go</a>
+        </div>
+        <div class="card">
+          <h2>Quizzes &amp; Games</h2>
+          <p>Interactive assessments and fun challenges.</p>
+          <a href="quizzes.html">Go</a>
+        </div>
+        <div class="card">
+          <h2>Simulators &amp; Calculators</h2>
+          <p>Hands-on tools for data and models.</p>
+          <a href="tools.html">Go</a>
+        </div>
       </div>
-      <div class="card">
-        <h2>Video Resources</h2>
-        <p>Episodes from “AI Science Sings” &amp; more.</p>
-        <a href="videos.html">Go</a>
-      </div>
-      <div class="card">
-        <h2>Quizzes &amp; Games</h2>
-        <p>Interactive assessments and fun challenges.</p>
-        <a href="quizzes.html">Go</a>
-      </div>
-      <div class="card">
-        <h2>Simulators &amp; Calculators</h2>
-        <p>Hands-on tools for data and models.</p>
-        <a href="tools.html">Go</a>
-      </div>
-    </div>
-  </main>
-
+    </main>
+  </div>
 </body>
 </html>
-
