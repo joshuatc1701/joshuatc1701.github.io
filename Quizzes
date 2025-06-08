@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quizzes & Games - AI Science Classroom</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: url('https://joshuatc1701.github.io/ChatGPT%20Image%20May%2027%2C%202025%2C%2005_41_35%20PM.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100%;
+    }
+    header {
+      background: rgba(0, 64, 128, 0.8);
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.2s;
+    }
+    .card:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: translateY(-4px);
+    }
+    .card h2 {
+      margin-top: 0;
+    }
+    .card a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      padding: 0.5rem 1rem;
+      background: #004080;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>Quizzes &amp; Games</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="lesson-plans.html">Lesson Plans</a>
+        <a href="videos.html">Video Resources</a>
+        <a href="tools.html">Simulators &amp; Calculators</a>
+        <a href="quizzes.html">Quizzes &amp; Games</a>
+      </nav>
+    </header>
+    <main class="container">
+      <p>Test your understanding with our AI-powered quizzes or have fun with interactive science games!</p>
+      <div class="grid">
+        <!-- Quiz Card Example -->
+        <div class="card">
+          <h2>AI Ethics Quiz</h2>
+          <p>A 10-question multiple-choice quiz on AI ethics principles.</p>
+          <a href="ethics-quiz.html">Start Quiz</a>
+        </div>
+        <!-- Game Card Example -->
+        <div class="card">
+          <h2>Neural Network Puzzle</h2>
+          <p>Arrange the layers to build a functioning neural network.</p>
+          <a href="nn-puzzle.html">Play Game</a>
+        </div>
+        <!-- Additional Cards Placeholder -->
+        <div class="card">
+          <h2>Redshift Challenge</h2>
+          <p>Identify spectral lines and calculate cosmic redshift.</p>
+          <a href="redshift-challenge.html">Try Now</a>
+        </div>
+        <div class="card">
+          <h2>Data Classification Quiz</h2>
+          <p>Classify data points using AI model outputs.</p>
+          <a href="classification-quiz.html">Begin Quiz</a>
+        </div>
+      </div>
+    </main>
+    <footer style="text-align:center; padding:1rem; color:#ccc;">
+      © 2025 AI Science Classroom
+    </footer>
+  </div>
+</body>
+</html>
